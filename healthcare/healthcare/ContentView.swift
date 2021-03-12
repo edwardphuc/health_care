@@ -5,17 +5,12 @@
 //  Created by Edward Lauv on 06/03/2021.
 //
 
-import SwiftUI
+import UIKit
 
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+class ContentView: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = .systemBackground
+        self.title = "slide menu"
     }
 }
