@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F10BCD025FE046900532D5F /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10BCCF25FE046900532D5F /* HealthKitSetupAssistant.swift */; };
+		5F10BCD525FE06E100532D5F /* testhealthKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10BCD325FE06E100532D5F /* testhealthKitViewController.swift */; };
+		5F10BCD625FE06E100532D5F /* testhealthKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F10BCD425FE06E100532D5F /* testhealthKitViewController.xib */; };
+		5F3F3DD925FBB9B300A706F6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3F3DD825FBB9B300A706F6 /* HealthKit.framework */; };
 		5FD7E5B425F3951A00547619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7E5B325F3951A00547619 /* AppDelegate.swift */; };
 		5FD7E5B625F3951A00547619 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7E5B525F3951A00547619 /* SceneDelegate.swift */; };
-		5FD7E5B825F3951A00547619 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7E5B725F3951A00547619 /* ContentView.swift */; };
 		5FD7E5BA25F3951D00547619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD7E5B925F3951D00547619 /* Assets.xcassets */; };
 		5FD7E5BD25F3951D00547619 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD7E5BC25F3951D00547619 /* Preview Assets.xcassets */; };
 		5FD7E5C025F3951D00547619 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD7E5BE25F3951D00547619 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F10BCCF25FE046900532D5F /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
+		5F10BCD325FE06E100532D5F /* testhealthKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testhealthKitViewController.swift; sourceTree = "<group>"; };
+		5F10BCD425FE06E100532D5F /* testhealthKitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testhealthKitViewController.xib; sourceTree = "<group>"; };
+		5F3F3DD625FBB9B300A706F6 /* healthcare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = healthcare.entitlements; sourceTree = "<group>"; };
+		5F3F3DD825FBB9B300A706F6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		5FD7E5B025F3951A00547619 /* healthcare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthcare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD7E5B325F3951A00547619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FD7E5B525F3951A00547619 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5FD7E5B725F3951A00547619 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5FD7E5B925F3951D00547619 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FD7E5BC25F3951D00547619 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5FD7E5BF25F3951D00547619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +38,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F3F3DD925FBB9B300A706F6 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F3F3DD725FBB9B300A706F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F3F3DD825FBB9B300A706F6 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5FD7E5A725F3951A00547619 = {
 			isa = PBXGroup;
 			children = (
 				5FD7E5B225F3951A00547619 /* healthcare */,
 				5FD7E5B125F3951A00547619 /* Products */,
+				5F3F3DD725FBB9B300A706F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +73,16 @@
 		5FD7E5B225F3951A00547619 /* healthcare */ = {
 			isa = PBXGroup;
 			children = (
+				5F3F3DD625FBB9B300A706F6 /* healthcare.entitlements */,
 				5FD7E5B325F3951A00547619 /* AppDelegate.swift */,
 				5FD7E5B525F3951A00547619 /* SceneDelegate.swift */,
-				5FD7E5B725F3951A00547619 /* ContentView.swift */,
 				5FD7E5B925F3951D00547619 /* Assets.xcassets */,
 				5FD7E5BE25F3951D00547619 /* LaunchScreen.storyboard */,
 				5FD7E5C125F3951D00547619 /* Info.plist */,
 				5FD7E5BB25F3951D00547619 /* Preview Content */,
+				5F10BCCF25FE046900532D5F /* HealthKitSetupAssistant.swift */,
+				5F10BCD325FE06E100532D5F /* testhealthKitViewController.swift */,
+				5F10BCD425FE06E100532D5F /* testhealthKitViewController.xib */,
 			);
 			path = healthcare;
 			sourceTree = "<group>";
@@ -133,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FD7E5C025F3951D00547619 /* LaunchScreen.storyboard in Resources */,
+				5F10BCD625FE06E100532D5F /* testhealthKitViewController.xib in Resources */,
 				5FD7E5BD25F3951D00547619 /* Preview Assets.xcassets in Resources */,
 				5FD7E5BA25F3951D00547619 /* Assets.xcassets in Resources */,
 			);
@@ -147,7 +168,8 @@
 			files = (
 				5FD7E5B425F3951A00547619 /* AppDelegate.swift in Sources */,
 				5FD7E5B625F3951A00547619 /* SceneDelegate.swift in Sources */,
-				5FD7E5B825F3951A00547619 /* ContentView.swift in Sources */,
+				5F10BCD025FE046900532D5F /* HealthKitSetupAssistant.swift in Sources */,
+				5F10BCD525FE06E100532D5F /* testhealthKitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +308,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = healthcare/healthcare.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"healthcare/Preview Content\"";
 				DEVELOPMENT_TEAM = 2JA8397FYP;
@@ -297,6 +321,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edwardlauv.healthcare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,6 +332,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = healthcare/healthcare.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"healthcare/Preview Content\"";
 				DEVELOPMENT_TEAM = 2JA8397FYP;
@@ -318,6 +345,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edwardlauv.healthcare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
