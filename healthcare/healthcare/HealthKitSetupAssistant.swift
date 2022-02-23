@@ -7,6 +7,8 @@
 
 import Foundation
 import HealthKit
+// day la phuc test
+
 class HealthKitSetupAssistant {
     private enum HealthkitSetupError: Error {
         case notAvailableOnDevice
