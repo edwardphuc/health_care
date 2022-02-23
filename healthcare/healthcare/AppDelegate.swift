@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//// phuc dep trai
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
